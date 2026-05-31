@@ -1,18 +1,16 @@
 # mac_os_dots
 
-My macOS desktop aesthetic — configs for the bar, window borders, and tiling WM.
-
-## What's here
+my macos setup inspired by i3wm on linux. configs for the bar, window borders, and tiling WM.
 
 | Path | Tool | What it does |
 |------|------|--------------|
-| `.config/sketchybar/` | [SketchyBar](https://github.com/FelixKratz/SketchyBar) | Top bar — black & white theme, JetBrains Mono, workspace numbers, media controls, center clock |
+| `.config/sketchybar/` | [SketchyBar](https://github.com/FelixKratz/SketchyBar) | Top bar black & white theme, JetBrains Mono, workspace numbers, media controls, center clock |
 | `.config/borders/bordersrc` | [JankyBorders](https://github.com/FelixKratz/JankyBorders) | Active-window border (solid amber) |
 | `.aerospace.toml` | [AeroSpace](https://github.com/nikitabobko/AeroSpace) | Tiling window manager + gaps |
 
 Fonts used: **JetBrainsMono Nerd Font**, **SF Pro** (icons), **sketchybar-app-font** (app icons).
 
-## Install on a new machine
+## How to install on a new machine
 
 ```bash
 # dependencies
@@ -32,7 +30,7 @@ open -a AeroSpace
 ## Editing
 
 Files live in this repo and are symlinked into `~`/`~/.config`, so edit them
-in either place — it's the same file. After changes:
+in either place it's the same file. After changes:
 
 ```bash
 brew services restart sketchybar   # or: sketchybar --reload
