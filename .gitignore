@@ -5,7 +5,6 @@
 .LSOverride
 Icon?
 
-# Sensitive — never commit credentials
 *.key
 *.pem
 *.p12
@@ -22,8 +21,6 @@ secrets/
 **/*token*
 **/*password*
 !**/icon_map.sh
-
-# Compiled SketchyBar helper (keep the source: helper.c, makefile, *.h)
 .config/sketchybar/helper/helper
 *.o
 *.dSYM/
