@@ -1,0 +1,18 @@
+#!/bin/bash
+# '0xff' add your actual hex code you want color after it  '0xff'
+# active_color=0xff3fcce8
+
+options=(
+	style=round
+	width=6
+	hidpi=on
+	active_color=0xff40e0d0
+	inactive_color=0x00000000
+)
+
+borders "${options[@]}"
+
+# Re-assert the solid color shortly after launch. On startup the daemon
+# applies its built-in default (a gradient) and can win the race against the
+# command above; a running daemon reliably accepts updates, so this sticks.
+( sleep 1; borders active_color=0xff40e0d0 inactive_color=0x00000000 ) >/dev/null 2>&1 &

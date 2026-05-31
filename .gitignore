@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Sensitive — never commit credentials
+*.key
+*.pem
+*.p12
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+*.pub
+.env
+.env.*
+*.secret
+secrets/
+**/credentials*
+**/*token*
+**/*password*
+!**/icon_map.sh
+
+# Compiled SketchyBar helper (keep the source: helper.c, makefile, *.h)
+.config/sketchybar/helper/helper
+*.o
+*.dSYM/
