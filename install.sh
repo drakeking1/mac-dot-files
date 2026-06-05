@@ -55,4 +55,3 @@ Done! A few manual touches:
       ~/.config/sketchybar/plugins/clock.sh  (e.g. TZ="America/New_York")
   • AeroSpace workspace->monitor assignments in ~/.aerospace.toml may be
       specific to a multi-monitor setup; adjust if your layout differs.
-NOTE
